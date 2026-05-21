@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VeriDrive - 모바일 신분증 기반 P2P 차량공유 신뢰 플랫폼</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="global-nav" aria-label="Global">
+      <a class="brand" href="#top" aria-label="VeriDrive home">VeriDrive</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#verify">ZKP 인증</a>
+        <a href="#contract">스마트컨트랙트</a>
+        <a href="#return">사고 처리</a>
+        <a href="#chain">OmniOne Chain</a>
+      </nav>
+      <button class="nav-icon" type="button" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <nav class="sub-nav" aria-label="Product">
+      <strong>VeriDrive</strong>
+      <div>
+        <a href="#flow">프로세스</a>
+        <a href="#trust">신뢰 모델</a>
+        <a class="mini-cta" href="#demo">목업 보기</a>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero product-tile-light">
+        <div class="copy">
+          <p class="eyebrow">Mobile ID. Zero-Knowledge. Smart Contract.</p>
+          <h1>믿고 빌리는 개인 간 차량공유.</h1>
+          <p class="lead">면허와 나이는 증명하고, 이름과 주민번호는 드러내지 않습니다.</p>
+          <div class="cta-row">
+            <a class="button-primary" href="#flow">서비스 흐름</a>
+            <a class="button-secondary" href="#trust">신뢰 구조</a>
+          </div>
+        </div>
+        <figure class="hero-visual">
+          <img src="assets/veridrive-hero.png" alt="VeriDrive mobile verification and vehicle sharing hero visual" />
+        </figure>
+      </section>
+
+      <section id="flow" class="product-tile-dark">
+        <div class="copy">
+          <h2>개인정보는 감추고, 자격만 증명합니다.</h2>
+          <p class="lead">빌리는 사람은 모바일 운전면허증으로 ZKP 인증을 완료합니다. 플랫폼은 “면허 유효”와 “만 21세 이상”만 확인합니다.</p>
+        </div>
+        <div class="phone-stage" aria-label="ZKP verification mockup">
+          <div class="phone">
+            <div class="phone-bar"></div>
+            <div class="license-card">
+              <span>Mobile Driver License</span>
+              <strong>Verified</strong>
+              <p>License valid<br />Age 21+</p>
+            </div>
+            <div class="proof-grid">
+              <span>이름 비공개</span>
+              <span>주민번호 비공개</span>
+              <span>자격만 검증</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="verify" class="split-tile product-tile-parchment">
+        <div class="copy left">
+          <h2>빌리는 사람</h2>
+          <p class="lead">인증 후 차량을 고르고, 렌트 신청과 함께 보증금을 스마트컨트랙트에 예치합니다.</p>
+        </div>
+        <ol class="steps">
+          <li><span>01</span><strong>ZKP 인증</strong><p>면허 유효성과 연령 조건만 증명</p></li>
+          <li><span>02</span><strong>차량 검색</strong><p>조건에 맞는 개인 차량 렌트 신청</p></li>
+          <li><span>03</span><strong>보증금 예치</strong><p>계약 전 스마트컨트랙트에 자동 락업</p></li>
+        </ol>
+      </section>
+
+      <section id="contract" class="split-tile product-tile-dark-2">
+        <div class="copy left">
+          <h2>빌려주는 사람</h2>
+          <p class="lead">상대의 신원 원문이 아니라 검증 결과만 확인합니다. 출발 전 차량 상태는 AI 분석으로 체인에 기록됩니다.</p>
+        </div>
+        <div class="vehicle-panel">
+          <div class="vehicle-photo">
+            <div class="car-shape"></div>
+            <span class="scan-line"></span>
+          </div>
+          <div class="status-list">
+            <p><strong>ZKP</strong><span>면허 있음</span></p>
+            <p><strong>AI 상태 분석</strong><span>스크래치 없음</span></p>
+            <p><strong>계약 조건</strong><span>체인 저장 완료</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="return" class="product-tile-light">
+        <div class="copy">
+          <h2>반납도 자동으로, 분쟁은 더 작게.</h2>
+          <p class="lead">반납 사진을 다시 분석해 이상이 없으면 보증금은 즉시 반환됩니다. 파손이 감지되면 합의된 위약금만 자동 차감됩니다.</p>
+        </div>
+        <div class="return-grid">
+          <article>
+            <span class="badge">Clean</span>
+            <h3>이상 없음</h3>
+            <p>스마트컨트랙트가 보증금을 자동 반환합니다.</p>
+          </article>
+          <article>
+            <span class="badge">Damage</span>
+            <h3>사고·파손 감지</h3>
+            <p>사전 합의된 위약금을 차감하고 나머지를 반환합니다.</p>
+          </article>
+          <article>
+            <span class="badge">Record</span>
+            <h3>영구 기록</h3>
+            <p>거래 이력은 OmniOne Chain에 남습니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="chain" class="product-tile-dark-3">
+        <div class="copy">
+          <h2>신뢰의 기록은 한 번만 쓰입니다.</h2>
+          <p class="lead">인증 결과, 차량 상태, 계약 조건, 보증금 집행 이력을 하나의 검증 가능한 타임라인으로 정리합니다.</p>
+        </div>
+        <div class="chain-strip" aria-label="OmniOne Chain timeline">
+          <span>Identity Proof</span>
+          <span>Deposit Locked</span>
+          <span>AI Snapshot</span>
+          <span>Return Decision</span>
+          <span>Final Settlement</span>
+        </div>
+      </section>
+
+      <section id="trust" class="utility-section">
+        <h2>플랫폼 신뢰 모델</h2>
+        <div class="utility-grid">
+          <article>
+            <h3>ZKP Privacy</h3>
+            <p>민감정보 노출 없이 렌트 자격만 검증합니다.</p>
+          </article>
+          <article>
+            <h3>Smart Escrow</h3>
+            <p>보증금 예치와 반환 조건을 계약 코드로 고정합니다.</p>
+          </article>
+          <article>
+            <h3>AI Evidence</h3>
+            <p>출발·반납 사진 분석 결과를 분쟁 근거로 남깁니다.</p>
+          </article>
+          <article>
+            <h3>On-chain Audit</h3>
+            <p>거래 이력을 OmniOne Chain에 검증 가능하게 기록합니다.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="demo" class="footer">
+      <div>
+        <strong>VeriDrive</strong>
+        <p>모바일 신분증 기반 P2P 차량공유 신뢰 플랫폼 목업</p>
+      </div>
+      <a class="button-primary" href="#top">맨 위로</a>
+    </footer>
+  </body>
+</html>
